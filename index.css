@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font: 16px/1 -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+.Header {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.logo {
+  margin-top: -100px;
+  width: 368px;
+  height: 109px;
+  text-indent: -9999em;
+  background-size: cover;
+  background-position: center;
+  background-image: url(/media/egojump.png);
+}
+
+.logo:hover {
+  background-image: url(/media/egojump-alt.png);
+}
