@@ -21,14 +21,48 @@ body {
   justify-content: center;
   height: 100%;
   width: 100%;
+  flex-direction: column;
 }
 
 .logo {
   margin-top: -100px;
-  width: 368px;
-  height: 109px;
+  width: 340px;
+  height: 90px;
   text-indent: -9999em;
   background-size: cover;
   background-position: center;
-  background-image: url(/media/egojump-alt.png);
+  background-image: url(/media/logo.png);
+}
+
+.enter {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.enter a {
+  text-decoration: none;
+  color: black;
+}
+
+.enter a:before {
+  margin-right: 10px;
+  content: '[';
+  transform: translateX(20px)
+}
+
+.enter a:after {
+  margin-left: 10px;
+  content: ']';
+  transform: translateX(-20px);
+}
+
+.enter a:before, .enter a:after {
+  display: inline-block;
+  opacity: 0;
+  transition: transform 0.3s, opacity 0.2s;
+}
+
+.enter a:hover:before, .enter a:hover:after {
+  opacity: 1;
+  transform: translateX(0px);
 }
